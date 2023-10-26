@@ -5,10 +5,17 @@ authors = ["Maciej Zielinski <maciek.s.zielinski@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-casper-contract = { version = "3.0.0", default-features = false, features = ["test-support"] }
-casper-engine-test-support = { version = "5.0.0", features = ["test-support"] }
-casper-execution-engine = "5.0.0"
+casper-contract = { version = "3.0.0", default-features = false, features = [
+  "test-support",
+] }
+casper-engine-test-support = { version = "6.0.0", features = ["test-support"] }
+casper-execution-engine = "6.0.0"
 casper-types = "3.0.0"
 
 [features]
-default = ["casper-contract/std", "casper-types/std", "casper-engine-test-support/test-support", "casper-contract/test-support"]
+default = [
+  "casper-contract/std",
+  "casper-types/std",
+  "casper-engine-test-support/test-support",
+  "casper-contract/test-support",
+]
